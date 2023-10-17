@@ -8,7 +8,7 @@ function calcularEdad(fechaNacimiento) {
     const horas = Math.floor((diferenciaTiempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutos = Math.floor((diferenciaTiempo % (1000 * 60 * 60)) / (1000 * 60));
     const segundos = Math.floor(diferenciaTiempo % (1000 * 60) / 1000);
-    const milise = Math.floor(diferenciaTiempo % 1000).toFixed(-3);
+    const milise = Math.floor(diferenciaTiempo % 1000);
     return {
       años,
       meses,
